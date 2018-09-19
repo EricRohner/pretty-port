@@ -1,0 +1,31 @@
+button {
+  height: 30px;
+  background-color: #D4DFC7;
+  border-color: #D4DFC7;
+}
+
+a {
+  text-decoration: none;
+  color: #819EC8;
+}
+
+a:hover {
+  color: #878E88;
+}
+
+nav {
+  height: 30px;
+  background-color: #D4DFC7;
+}
+
+button:hover {
+  height: 30px;
+  background-color: #D4DFC7;
+  border-bottom-color: #819EC8;
+  border-right-color: #819EC8;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.24);
+
+  text-decoration: none;
+}

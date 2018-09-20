@@ -29,3 +29,43 @@ button:hover {
 
   text-decoration: none;
 }
+
+.top {
+  width: 100vw;
+  height:10vh;
+  background-color: white;
+  position: absolute;
+  top: 8vh;
+  left: 0px;
+  z-index: 1;
+}
+
+.bottom {
+  width: 100vw;
+  height:10vh;
+  background-color: white;
+  position: absolute;
+  top: 88vh;
+  left: 0px;
+  z-index: 1;
+}
+
+.right {
+  width: 10vw;
+  height:100vh;
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  left: 5vw;
+  z-index: 1;
+}
+
+.left {
+  width: 10vw;
+  height:100vh;
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  left: 85vw;
+  z-index: 1;
+}

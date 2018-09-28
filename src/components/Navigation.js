@@ -13,7 +13,9 @@ class Navigation extends Component {
 render(){
   return (
     <body>
-      <a href="/"> Home </a>
+      <a href={routes.LANDING}> Home </a>
+      <a href={routes.BLOG}> Blog </a>
+      <a href={routes.ABOUT}> About </a>
     </body>
   )
 }

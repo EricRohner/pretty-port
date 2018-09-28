@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
+import './Landing.css'
 
 export default class Landing extends Component {
   constructor(props) {
     super(props);
     this.handleMouseMove = this.handleMouseMove.bind(this);
-    this.state = {x1: -28, y1: -28, x2: -28, y2: -28, x3: -32, y3: -38, x4: -50, y4: -84};
+    this.state = {
+      x1: 93, x2: 108, x3: 92, x4: 84, y1: 86, y2: 96, y3: 82, y4: 66
+    }
   }
 
   handleMouseMove(event) {
@@ -18,6 +21,7 @@ export default class Landing extends Component {
       x4: Math.sin(event.clientX / window.innerWidth + 2.35) * 64 - 60 + window.innerWidth/8,
       y4: Math.sin(event.clientY / window.innerHeight + 2.35) * 64 +36
     });
+    console.log(this.state)
   }
 
   render() {

@@ -18,8 +18,8 @@ class App extends Component {
           <Navigation />
 
           <Route exact path={routes.LANDING} component={() => <Landing />} />
-          <Route exact path={routes.PAGE1} component={() => <Page1 />} />
-          <Route exact path={routes.PAGE2} component={() => <Page2 />} />
+          <Route exact path={routes.BLOG} component={() => <Page1 />} />
+          <Route exact path={routes.ABOUT} component={() => <Page2 />} />
         </div>
       </Router>
     )

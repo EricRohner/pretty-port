@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import * as routes from '../constants/routes'
 import Navigation from './Navigation'
 import Landing from './Landing'
-import Page1 from './Page1'
-import Page2 from './Page2'
+import Blog from './Blog'
+import About from './About'
 
 import {
   BrowserRouter as Router,
@@ -18,8 +18,8 @@ class App extends Component {
           <Navigation />
 
           <Route exact path={routes.LANDING} component={() => <Landing />} />
-          <Route exact path={routes.BLOG} component={() => <Page1 />} />
-          <Route exact path={routes.ABOUT} component={() => <Page2 />} />
+          <Route exact path={routes.BLOG} component={() => <Blog />} />
+          <Route exact path={routes.ABOUT} component={() => <About />} />
         </div>
       </Router>
     )

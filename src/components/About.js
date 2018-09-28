@@ -20,11 +20,11 @@ export default class Landing extends Component {
   handleMouseMove(event) {
     this.setState({
       x1: Math.sin(event.clientX / window.innerWidth) * 16 - 28 + window.innerWidth/8,
-      y1: Math.sin(event.clientY / window.innerHeight) * 16 + 82,
+      y1: Math.sin(event.clientY / window.innerHeight) * 16 + 92,
       x2: Math.sin(event.clientX / window.innerWidth + 0.78) * 16 - 18 + window.innerWidth/8,
-      y2: Math.sin(event.clientY / window.innerHeight + 0.78) * 16 + 82,
+      y2: Math.sin(event.clientY / window.innerHeight + 0.78) * 16 + 87,
       x3: Math.sin(event.clientX / window.innerWidth + 1.57) * 32 - 42 + window.innerWidth/8,
-      y3: Math.sin(event.clientY / window.innerHeight + 1.57) * 32 + 52,
+      y3: Math.sin(event.clientY / window.innerHeight + 1.57) * 32 + 62,
       x4: Math.sin(event.clientX / window.innerWidth + 2.35) * 64 - 60 + window.innerWidth/8,
       y4: Math.sin(event.clientY / window.innerHeight + 2.35) * 64 +36
     });
@@ -70,7 +70,6 @@ export default class Landing extends Component {
                height: '85vh',
                width: '85vw'
              }}/>
-        <div className='top'> </div>
       </div>
     );
 

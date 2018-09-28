@@ -29,6 +29,7 @@
 }
 
 .left {
+  padding-top: 0;
   width: 10vw;
   height:100vh;
   background-color: white;

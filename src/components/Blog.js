@@ -4,11 +4,17 @@ import './Blog.css'
 class Blog extends Component {
   constructor(props) {
       super(props);
-      this.state = {pattyhide: true};
+      this.state = {pattyhide: true, outsidehide: true, buenahide: true, steorthide: true};
     }
 
   pattyHideFalse = () => {this.setState({ pattyhide: false })}
   pattyHideTrue = () => {this.setState({ pattyhide: true })}
+  outsideHideFalse = () => {this.setState({ outsidehide: false })}
+  outsideHideTrue = () => {this.setState({ outsidehide: true })}
+  buenaHideFalse = () => {this.setState({ buenahide: false })}
+  buenaHideTrue = () => {this.setState({ buenahide: true })}
+  steortHideFalse = () => {this.setState({ steorthide: false })}
+  steortHideTrue = () => {this.setState({ steorthide: true })}
 
   render() {
     return (
@@ -18,13 +24,33 @@ class Blog extends Component {
           <p onMouseEnter={this.pattyHideFalse}
              onMouseLeave={this.pattyHideTrue}>
             Patty's Ridge</p>
-          <p>Steort's Ridge</p>
+          <p onMouseEnter={this.buenaHideFalse}
+             onMouseLeave={this.buenaHideTrue}>
+            Buena Vista</p>
+          <p onMouseEnter={this.steortHideFalse}
+             onMouseLeave={this.steortHideTrue}>
+            Steort's Ridge</p>
           <p>Standard Ridge</p>
-          <p>Outisde Corner</p>
+          <p onMouseEnter={this.outsideHideFalse}
+             onMouseLeave={this.outsideHideTrue}>
+            Outisde Corner</p>
         </div>
-        <div className="images">
-          <img hidden={this.state.pattyhide} src="/Blog/patty.jpg"/>
-
+        <div className="images" hidden={this.state.pattyhide}>
+          <img className="image" src="/Blog/pattyfull.jpg"/>
+          <img className="image" src="/Blog/patty.jpg"/>
+          <img className="image" src="/Blog/pattytop.jpg"/>
+        </div>
+        <div className="outsideimages" hidden={this.state.outsidehide}>
+          <img className="image" src="/Blog/outsidetop.jpg"/>
+          <img className="image" src="/Blog/outsidewave.jpg"/>
+        </div>
+        <div className="buenaimages" hidden={this.state.buenahide}>
+          <img className="buenaimage" src="/Blog/buenavistafull.jpg"/>
+          <img className="buenaimage" src="/Blog/buenavistatop.jpg"/>
+        </div>
+        <div className="steortimages" hidden={this.state.steorthide}>
+          <img className="steortimage" src="/Blog/steortbase.jpg"/>
+          <img className="steortimage" src="/Blog/steortp3.jpg"/>
         </div>
 
       </body>

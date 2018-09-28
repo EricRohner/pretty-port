@@ -1,13 +1,14 @@
 .left{
   height: 80vh;
-  /*padding-top: 10vh;*/
   display: flex;
   flex-direction: column;
 }
 
 p{
-  align-self: center;
+  width:100%;
+  text-align: center;
   color: #274C77;
+  -webkit-transform: translate(0vw, 9vh);
   -webkit-transition-property: transform;
   -webkit-transition-duration: 1s;
 }
@@ -54,3 +55,29 @@ p:hover::after{
   Position: absolute;
   top: 20vh;
 }
+
+.image,
+.buenaimage,
+.steortimage{
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+
+.outsideimages,
+.steortimages{
+  margin-left: 13vw;
+  margin-top: 10vh;
+}
+
+.buenaimages{
+  margin-left: 22vw;
+  margin-top: 10vh;
+}
+
+.buenaimage{
+width: 40%
+}
+.steortimage{
+  scale: 25%
+}
+

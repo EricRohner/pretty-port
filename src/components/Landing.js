@@ -72,9 +72,7 @@ export default class Landing extends Component {
                top: this.state.y4,
                height: '85vh',
                width: '85vw',
-               zindex: "1",
              }}/>
-        <div className='top'> </div>
       </div>
 
     );

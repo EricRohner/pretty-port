@@ -1,4 +1,4 @@
-button {
+/*button {
   height: 30px;
   background-color: #D4DFC7;
   border-color: #D4DFC7;
@@ -13,11 +13,6 @@ a:hover {
   color: #878E88;
 }
 
-nav {
-  height: 30px;
-  background-color: #D4DFC7;
-}
-
 button:hover {
   height: 30px;
   background-color: #D4DFC7;
@@ -26,9 +21,59 @@ button:hover {
   border-bottom-width: 2px;
   border-right-width: 2px;
   box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.24);
-
   text-decoration: none;
+  z-index: 2;
+}*/
+
+
+body {
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  background-color: #D4DFC7;
+  z-index: 2;
 }
+a {
+  position: relative;
+  padding: 20px 20px 20px 30px;
+  color: #fff;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 10;
+  transition: 0.5s;
+}
+a::before,
+a::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background: #fff;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  transition-property: width,opacity,transform,box-shadow;
+
+}
+a::before{
+  top: 0;
+  left: 0;
+}
+
+a::after{
+  top: 0;
+  right: 0;
+}
+
+a:hover::before{
+  width: 100%;
+  opacity: 0.1;
+  transform: translate(5px, -5px);
+  box-shaow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+
 
 .top {
   width: 100vw;
@@ -37,7 +82,7 @@ button:hover {
   position: absolute;
   top: 8vh;
   left: 0px;
-  z-index: 1;
+  z-index: 0.9;
 }
 
 .bottom {
@@ -55,7 +100,7 @@ button:hover {
   height:100vh;
   background-color: white;
   position: absolute;
-  top: 30px;
+  top: 10vh;
   left: 5vw;
   z-index: 1;
 }
@@ -65,7 +110,7 @@ button:hover {
   height:100vh;
   background-color: white;
   position: absolute;
-  top: 30px;
+  top: 8vh;
   left: 85vw;
   z-index: 1;
 }

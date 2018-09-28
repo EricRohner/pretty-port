@@ -4,17 +4,21 @@ import './Blog.css'
 class Blog extends Component {
   constructor(props) {
       super(props);
-      this.state = {pattyhide: true, outsidehide: true, buenahide: true, steorthide: true};
+      this.state = {pattyhide: true, outsidehide: true, buenahide: true, steorthide: true, standardhide: true, vectorhide: true};
     }
 
   pattyHideFalse = () => {this.setState({ pattyhide: false })}
   pattyHideTrue = () => {this.setState({ pattyhide: true })}
+  vectorHideFalse = () => {this.setState({ vectorhide: false })}
+  vectorHideTrue = () => {this.setState({ vectorhide: true })}
   outsideHideFalse = () => {this.setState({ outsidehide: false })}
   outsideHideTrue = () => {this.setState({ outsidehide: true })}
   buenaHideFalse = () => {this.setState({ buenahide: false })}
   buenaHideTrue = () => {this.setState({ buenahide: true })}
   steortHideFalse = () => {this.setState({ steorthide: false })}
   steortHideTrue = () => {this.setState({ steorthide: true })}
+  standardHideFalse = () => {this.setState({ standardhide: false })}
+  standardHideTrue = () => {this.setState({ standardhide: true })}
 
   render() {
     return (
@@ -24,13 +28,18 @@ class Blog extends Component {
           <p onMouseEnter={this.pattyHideFalse}
              onMouseLeave={this.pattyHideTrue}>
             Patty's Ridge</p>
+          <p onMouseEnter={this.vectorHideFalse}
+             onMouseLeave={this.vectorHideTrue}>
+            Vector Madness</p>
           <p onMouseEnter={this.buenaHideFalse}
              onMouseLeave={this.buenaHideTrue}>
             Buena Vista</p>
           <p onMouseEnter={this.steortHideFalse}
              onMouseLeave={this.steortHideTrue}>
             Steort's Ridge</p>
-          <p>Standard Ridge</p>
+          <p onMouseEnter={this.standardHideFalse}
+             onMouseLeave={this.standardHideTrue}>
+            Standard Ridge</p>
           <p onMouseEnter={this.outsideHideFalse}
              onMouseLeave={this.outsideHideTrue}>
             Outisde Corner</p>
@@ -39,6 +48,11 @@ class Blog extends Component {
           <img className="image" src="/Blog/pattyfull.jpg"/>
           <img className="image" src="/Blog/patty.jpg"/>
           <img className="image" src="/Blog/pattytop.jpg"/>
+        </div>
+        <div className="vectorimages" hidden={this.state.vectorhide}>
+          <img className="image" src="/Blog/vectorbase.jpg"/>
+          <img className="image" src="/Blog/vectortraverse.jpg"/>
+          <img className="image" src="/Blog/vectortop.jpg"/>
         </div>
         <div className="outsideimages" hidden={this.state.outsidehide}>
           <img className="image" src="/Blog/outsidetop.jpg"/>
@@ -51,6 +65,11 @@ class Blog extends Component {
         <div className="steortimages" hidden={this.state.steorthide}>
           <img className="steortimage" src="/Blog/steortbase.jpg"/>
           <img className="steortimage" src="/Blog/steortp3.jpg"/>
+        </div>
+        <div className="standardimages" hidden={this.state.standardhide}>
+          <img className="image" src="/Blog/standardlichen.jpg"/>
+          <img className="image" src="/Blog/standardp1.jpg"/>
+          <img className="image" src="/Blog/standardtop.jpg"/>
         </div>
 
       </body>

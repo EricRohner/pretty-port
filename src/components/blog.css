@@ -51,9 +51,11 @@ p:hover::after{
   opacity: 0.2;
 }
 
-.images{
-  Position: absolute;
-  top: 20vh;
+.images,
+.standardimages,
+.vectorimages{
+  margin-left: 13vw;
+  margin-top : 10vh;
 }
 
 .image,

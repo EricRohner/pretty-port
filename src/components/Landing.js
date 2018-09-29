@@ -74,8 +74,10 @@ export default class Landing extends Component {
                  height: '75vh',
                  width: '75vw'
                }} />
+          <div className="foodContainer">
           <img className="food" hidden={this.state.foodHide} src="/CaesarPalace/sashimi.png"/>
-          <img src="/CaesarPalace/Layer4.png"
+          </div>
+            <img src="/CaesarPalace/Layer4.png"
                className="tree"
                style={{
                  position: 'absolute',

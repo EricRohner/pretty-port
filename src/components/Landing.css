@@ -15,6 +15,12 @@ p{
   left: 30vw;
 }
 
+.foodContainer{
+  border-width: 10px;
+  border-radius: 100px;
+  border-color: #443850;
+}
+
 .contact::before{
   position: absolute;
   top: 0;

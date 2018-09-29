@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import './About.css'
 
 export default class Landing extends Component {
@@ -33,6 +33,7 @@ export default class Landing extends Component {
 
   render() {
     return (
+      <Fragment>
       <div onMouseMove={this.handleMouseMove}>
         <div className='top'> </div>
         <div className='bottom'> </div>
@@ -71,6 +72,20 @@ export default class Landing extends Component {
                width: '85vw'
              }}/>
       </div>
+        <footer>
+          <p className ="contact">Contact:</p>
+          <div className="footerContainer">
+          <div>
+          <p>(360) 791-5099</p>
+          <p>EricRohner22@gmail.com</p>
+          </div>
+          <div>
+            <p>Marmelade District</p>
+            <p>Salt Lake City, UT</p>
+          </div>
+          </div>
+        </footer>
+      </Fragment>
     );
 
   }

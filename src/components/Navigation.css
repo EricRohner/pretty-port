@@ -36,7 +36,7 @@ a::after{
   -webkit-transform: translate(0vw, 1vh);
   pointer-events: none;
   -webkit-transform-style: preserve-3d;
-  -webkit-transition-property: width,opacity;
+  -webkit-transition-property: width,opacity, background;
   -webkit-transition-duration: 0.5s;
 
 }
@@ -53,6 +53,7 @@ a::after{
 a:hover::before,
 a:hover::after{
   width: 100%;
+  background: #6096BA;
   opacity: 0.1;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
 }

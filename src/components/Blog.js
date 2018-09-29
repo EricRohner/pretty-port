@@ -25,22 +25,28 @@ class Blog extends Component {
       <body>
         <div className='top'></div>
         <div className='left'>
-          <p onMouseEnter={this.pattyHideFalse}
+          <p className="hoverP"
+            onMouseEnter={this.pattyHideFalse}
              onMouseLeave={this.pattyHideTrue}>
             Patty's Ridge</p>
-          <p onMouseEnter={this.vectorHideFalse}
+          <p className="hoverP"
+            onMouseEnter={this.vectorHideFalse}
              onMouseLeave={this.vectorHideTrue}>
             Vector Madness</p>
-          <p onMouseEnter={this.buenaHideFalse}
+          <p className="hoverP"
+            onMouseEnter={this.buenaHideFalse}
              onMouseLeave={this.buenaHideTrue}>
             Buena Vista</p>
-          <p onMouseEnter={this.steortHideFalse}
+          <p className="hoverP"
+            onMouseEnter={this.steortHideFalse}
              onMouseLeave={this.steortHideTrue}>
             Steort's Ridge</p>
-          <p onMouseEnter={this.standardHideFalse}
+          <p className="hoverP"
+            onMouseEnter={this.standardHideFalse}
              onMouseLeave={this.standardHideTrue}>
             Standard Ridge</p>
-          <p onMouseEnter={this.outsideHideFalse}
+          <p className="hoverP"
+            onMouseEnter={this.outsideHideFalse}
              onMouseLeave={this.outsideHideTrue}>
             Outisde Corner</p>
         </div>
@@ -67,11 +73,10 @@ class Blog extends Component {
           <img className="steortimage" src="/Blog/steortp3.jpg"/>
         </div>
         <div className="standardimages" hidden={this.state.standardhide}>
+          <img className="image" src="/Blog/standardp3.jpg"/>
           <img className="image" src="/Blog/standardlichen.jpg"/>
-          <img className="image" src="/Blog/standardp1.jpg"/>
           <img className="image" src="/Blog/standardtop.jpg"/>
         </div>
-
       </body>
     )
   }

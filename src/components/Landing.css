@@ -1,3 +1,32 @@
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-transform: translate(0vw, 89vh);
+}
+
+p{
+  color: #274C77;
+}
+
+.contact::before{
+  position: absolute;
+  top: 0;
+  right:0;
+  content: "";
+  height: 45px;
+  width: 2px;
+  background: #274C77;
+  -webkit-transform: translate(-20vw, 40px);
+}
+
+.footerContainer{
+  margin-top: -3vh;
+  justify-content: space-between;
+  display: flex;
+  width: 40vw;
+}
+
 .tree{
   z-index: 2;
 }

@@ -14,6 +14,7 @@ export default class Landing extends Component {
       y2: 118,
       y3: 127,
       y4: 80,
+      foodHide: true
     }
   }
 
@@ -33,6 +34,9 @@ export default class Landing extends Component {
     console.log(this.state)
   }
 
+  foodHideFalse = () => {this.setState({ foodHide: false })}
+  foodHideTrue = () => {this.setState({ foodHide: true })}
+
   render() {
     return (
       <body>
@@ -40,7 +44,12 @@ export default class Landing extends Component {
           <div className='top'></div>
           <div className='bottom'></div>
           <div className='right'></div>
-          <div className='left'></div>
+          <div className='left'>
+            <p className="hoverP"
+               onMouseEnter={this.foodHideFalse}
+               onMouseLeave={this.foodHideTrue}>
+              Food</p>
+          </div>
           <img src="/CaesarPalace/Layer1.png"
                style={{
                  position: 'absolute',
@@ -65,6 +74,7 @@ export default class Landing extends Component {
                  height: '75vh',
                  width: '75vw'
                }} />
+          <img className="food" hidden={this.state.foodHide} src="/CaesarPalace/sashimi.png"/>
           <img src="/CaesarPalace/Layer4.png"
                className="tree"
                style={{

@@ -9,6 +9,12 @@ p{
   color: #274C77;
 }
 
+.food{
+  position: absolute;
+  top: 20vh;
+  left: 30vw;
+}
+
 .contact::before{
   position: absolute;
   top: 0;

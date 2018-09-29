@@ -74,10 +74,12 @@ export default class Landing extends Component {
                  height: '75vh',
                  width: '75vw'
                }} />
-          <div className="foodContainer">
-          <img className="food" hidden={this.state.foodHide} src="/CaesarPalace/sashimi.png"/>
+          <div className="foodContainer" hidden={this.state.foodHide}>
+            <img className="sashimi" src="/CaesarPalace/sashimi.png" />
+            <img className="veggies" src="CaesarPalace/veggies.png" />
+            <img className="stirfry" src="CaesarPalace/stirfry.png" />
           </div>
-            <img src="/CaesarPalace/Layer4.png"
+          <img src="/CaesarPalace/Layer4.png"
                className="tree"
                style={{
                  position: 'absolute',
@@ -88,7 +90,7 @@ export default class Landing extends Component {
                }} />
         </div>
         <footer>
-          <p className ="contact">Contact:</p>
+          <p className="contact">Contact:</p>
           <div className='footerContainer'>
             <div>
               <p>(360) 791-5099</p>

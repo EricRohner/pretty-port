@@ -9,17 +9,26 @@ p{
   color: #274C77;
 }
 
-.food{
+.sashimi{
   position: absolute;
-  top: 20vh;
-  left: 30vw;
+  top: 28vh;
+  left: 25vw;
+  clip-path: circle(40%);
 }
 
-.foodContainer{
-  border-width: 10px;
-  border-radius: 100px;
-  border-color: #443850;
+.stirfry{
+  position: absolute;
+  top: 24vh;
+  left: 20vw;
+  clip-path: circle(40%);
 }
+.veggies{
+  position: absolute;
+  top: 60vh;
+  left: 58vw;
+  clip-path: circle(40%);
+}
+
 
 .contact::before{
   position: absolute;
